@@ -1,0 +1,12 @@
+
+.featured-main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.featured-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

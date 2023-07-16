@@ -1,0 +1,21 @@
+
+.products-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 500px));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.product {
+    min-width: 100px;
+    border: 1px solid black;
+}
+
+.filters-container {
+    min-width: 300px;
+}
