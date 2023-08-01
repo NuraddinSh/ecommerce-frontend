@@ -1,8 +1,8 @@
-import {React, useState, useEffect} from "react";
+import React, { useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import {data} from "../data";
-import "../cssPages/featuredProducts.css"
-export default function FeaturedProducts() {
+import "../cssPages/ProductsLandingPage.css"
+export default function ProductsLandingPage() {
     // TO DO  kategori Id parametresi alan kategorui detay listesi veren api istenecek, usePasramla alinacak
     // TO DO kategorileri alıp Link tag'ı ile maplenecek,cdinamik olması açısından
     return (

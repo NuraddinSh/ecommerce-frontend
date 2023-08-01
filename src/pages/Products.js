@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {useParams} from "react-router-dom";
+import {useParams, Link} from "react-router-dom";
 import "../cssPages/products.css"
 
 
@@ -12,10 +12,12 @@ export default function Products() {
     const items=arr.map(x=>{
         return (
         <div>
-            <div className={"product"}>Image</div>
-            <h4>ItemName</h4>
-            <p>Item detail lakndka andappafa afşankfşa</p>
-            <p>500$</p>
+            <Link to={"/product-details"} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                <div className={"product"}>Image</div>
+                <h4>ItemName</h4>
+                <p>Item detail lakndka andappafa afşankfşa</p>
+                <p>500$</p>
+            </Link>
         </div>)
     })
 
