@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica Neue", serif;
 }
 
 main {
@@ -31,6 +31,67 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
 
+}
+
+ul {
+    list-style-type: none
+}
+
+.carousel-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(24px * 2);
+    color: rgb(17, 17, 17);
+}
+.carousel-title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    font-style: normal;
+    text-transform: none;
+
+}
+
+.carousel-btns {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-inline-start: 12px;
+}
+
+.carousel-component {
+
+}
+
+.carousel-items {
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    padding-inline-start: calc(24px * 2);
+    scroll-padding: 0 calc(24px * 2);
+    transition: color 250ms ease-in-out 0s;
+    display: flex;
+    gap: 12px;
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 calc(33% - 18px)
+}
+
+.item-img {
+    width: auto;
+    height: 400px;
+    border: 1px solid black;
 }
 
 

@@ -46,9 +46,9 @@
     display: flex;
     flex-direction: column;
     width: 376px;
-    border: 1px solid black;
+
     padding-right: 48px;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .product-name {
@@ -87,9 +87,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #CACACB;
+    background: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px;
     border-radius: 4px;
     height: 48px;
+    cursor: pointer;
+}
+.size-box:hover {
+    box-shadow: rgb(17, 17, 17) 0px 0px 0px 1px inset
 }
 
 .button-wrapper {

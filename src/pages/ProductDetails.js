@@ -2,11 +2,16 @@ import React from "react";
 import "../cssPages/productDetails.css"
 import RecomendationCarouselComponent from "../components/RecomendationCarouselComponent";
 
+
 export default function ProductDetails() {
-    const x= [1,2,3,4,5,6]
+    const x= [1,2,3,4,5,6,7,8,9,10]
     const sizes=x.map(size => {
         return (
-            <div className={"size-box"}>EU 35</div>
+
+                <label className={"size-box"}>
+                    EU 35
+                    <input type="radio" style={{display: "none"}} />
+                </label>
         )
     })
 
